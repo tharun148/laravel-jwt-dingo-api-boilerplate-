@@ -23,8 +23,9 @@ this boilerplate used below packages
  - Create a .env file in root folder
  - Copy the .env.example file content to .env
  - In .env file give the application details
+ - Generate application key by ```php artisan key:generate```
  - After run ```php artisan migrate``` for generating database migration
- - ```php artisan jwt:generate``` to generate jwt key in .env file
+ - ```php artisan jwt:secret``` to generate jwt key in .env file
 
 ## AUTH Api details
   - POST api/auth/login, to do the login and get your access token;
