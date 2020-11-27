@@ -880,16 +880,16 @@
         },
         {
             "name": "lcobucci/jwt",
-            "version": "3.3.2",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/jwt.git",
-                "reference": "56f10808089e38623345e28af2f2d5e4eb579455"
+                "reference": "958a9873a63b0244a72f6e354ccc86019ee674a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/56f10808089e38623345e28af2f2d5e4eb579455",
-                "reference": "56f10808089e38623345e28af2f2d5e4eb579455",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/958a9873a63b0244a72f6e354ccc86019ee674a5",
+                "reference": "958a9873a63b0244a72f6e354ccc86019ee674a5",
                 "shasum": ""
             },
             "require": {
@@ -904,6 +904,9 @@
                 "phpunit/phpunit": "^5.7 || ^7.3",
                 "squizlabs/php_codesniffer": "~2.3"
             },
+            "suggest": {
+                "lcobucci/clock": "*"
+            },
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -913,7 +916,12 @@
             "autoload": {
                 "psr-4": {
                     "Lcobucci\\JWT\\": "src"
-                }
+                },
+                "files": [
+                    "compat/class-aliases.php",
+                    "compat/json-exception-polyfill.php",
+                    "compat/lcobucci-clock-polyfill.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -941,7 +949,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2020-05-22T08:21:12+00:00"
+            "time": "2020-11-27T01:17:14+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3757,6 +3765,7 @@
                 "faker",
                 "fixtures"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:22:17+00:00"
         },
         {
